@@ -1,0 +1,13 @@
+export 'package:capstone2/widgets/social_media_widget.dart';
+export 'package:capstone2/widgets/email_widget.dart';
+export 'package:capstone2/widgets/password_widget.dart';
+export 'package:capstone2/widgets/user_name_widget.dart';
+export 'package:capstone2/widgets/continue_with_widget.dart';
+export 'package:capstone2/widgets/popular_jobs_list_view.dart';
+export 'package:capstone2/widgets/search_text_field_widget.dart';
+export 'package:capstone2/widgets/recent_job_post_view.dart';
+export 'package:capstone2/widgets/search_menu_widget.dart';
+export 'package:capstone2/widgets/search_job_view.dart';
+export 'package:capstone2/widgets/favorite_widget.dart';
+export 'package:capstone2/widgets/filter_selection_view.dart';
+export 'package:capstone2/widgets/modal_bottom_sheet_widget.dart';
