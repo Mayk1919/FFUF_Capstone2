@@ -7,7 +7,7 @@ class RegisterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black,
         ),
         backgroundColor: Colors.transparent,
@@ -36,9 +36,9 @@ class RegisterScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.bodyText1,
               ),
             ),
-            UserNameWidget(),
-            EmailWidget(),
-            PasswordWidget(),
+            const UserNameWidget(),
+            const EmailWidget(),
+            const PasswordWidget(),
             Container(
               width: double.infinity,
               child: Text(
@@ -55,17 +55,17 @@ class RegisterScreen extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text('SIGN UP'),
+                child: const Text('SIGN UP'),
               ),
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * .04,
             ),
-            ContinueWithWidget(),
+            const ContinueWithWidget(),
             SizedBox(
               height: MediaQuery.of(context).size.height * .04,
             ),
-            SocialMediaWidget(),
+            const SocialMediaWidget(),
             SizedBox(
               height: MediaQuery.of(context).size.height * .04,
             ),

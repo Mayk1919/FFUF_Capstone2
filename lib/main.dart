@@ -19,16 +19,16 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Job Search App',
         theme: ThemeData(
-          backgroundColor: Color(0XFFE5E5E5),
-          primaryColor: Color(0XFF4CA6A8),
+          backgroundColor: const Color(0XFFE5E5E5),
+          primaryColor: const Color(0XFF4CA6A8),
           fontFamily: 'Poppins',
-          appBarTheme: AppBarTheme(
+          appBarTheme: const AppBarTheme(
     
             backgroundColor: Colors.transparent,
             iconTheme: IconThemeData(color: Colors.white)
             
           ),
-          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
             backgroundColor:Colors.white,
             selectedItemColor: Color(0XFF4CA6A8),
             unselectedItemColor: Color(0XFFA8A8AA),
@@ -39,9 +39,9 @@ class MyApp extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               shape:
                   RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              primary: Color(0XFF4CA6A8), // background color
+              primary: const Color(0XFF4CA6A8), // background color
               onPrimary: Colors.white,
-              textStyle:  TextStyle(
+              textStyle:  const TextStyle(
                 fontSize: 16.0,
     
                 fontWeight: FontWeight.w400,

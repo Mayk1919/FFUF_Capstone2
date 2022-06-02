@@ -9,8 +9,8 @@ class WelcomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Padding(
-          padding: const EdgeInsets.symmetric(
+        leading: const Padding(
+          padding: EdgeInsets.symmetric(
             vertical: 10.0,
           ),
           child: Image(
@@ -56,7 +56,7 @@ class WelcomeScreen extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * .02,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 50.0,
                 ),
                 child: Container(

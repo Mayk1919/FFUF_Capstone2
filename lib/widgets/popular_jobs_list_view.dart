@@ -17,7 +17,7 @@ class PopularJobsListView extends StatelessWidget {
         if (snapshot.connectionState == ConnectionState.done) {
           final popularJobs = snapshot.data?.popularJobs ?? [];
           return Container(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 20,
             ),
             height: MediaQuery.of(context).size.height * .2,
@@ -81,7 +81,7 @@ class PopularJobsListView extends StatelessWidget {
                                 'P ${popularJob.salary}/m',
                                 style: Theme.of(context).textTheme.subtitle2,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 10,
                               ),
                               Text(

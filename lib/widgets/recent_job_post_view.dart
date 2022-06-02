@@ -11,7 +11,7 @@ class RecentJobPostView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 20,
       ),
       height: MediaQuery.of(context).size.height * .3,

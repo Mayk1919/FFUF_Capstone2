@@ -29,10 +29,10 @@ class MainScreen extends StatelessWidget {
                     height: 44,
                     width: 44,
                     decoration: BoxDecoration(
-                      color: Color(0XFF4CA6A8),
+                      color: const Color(0XFF4CA6A8),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Icon(Icons.notes),
+                    child: const Icon(Icons.notes),
                   ),
                 ],
               ),
@@ -43,8 +43,8 @@ class MainScreen extends StatelessWidget {
               onTap: () {
                 print('profile');
               },
-              child: Padding(
-                padding: const EdgeInsets.only(right: 20.0),
+              child: const Padding(
+                padding: EdgeInsets.only(right: 20.0),
                 child: CircleAvatar(
                   radius: 22,
                   backgroundImage:
@@ -54,13 +54,13 @@ class MainScreen extends StatelessWidget {
             )
           ],
         ),
-        body: HomeScreen(),
+        body: const HomeScreen(),
         bottomNavigationBar: BottomNavigationBar(
           unselectedItemColor:
               Theme.of(context).bottomNavigationBarTheme.unselectedItemColor,
           selectedItemColor:
               Theme.of(context).bottomNavigationBarTheme.selectedItemColor,
-          items: [
+          items: const [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.explore,

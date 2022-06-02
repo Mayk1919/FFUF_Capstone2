@@ -55,7 +55,7 @@ final itemScrollController = ItemScrollController();
   Widget build(BuildContext context) {
     return Container(
       height: 50,
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 20,
       ),
       color: Colors.transparent,

@@ -4,4 +4,5 @@ List jobsTypes = [
   "Contract",
   "Freelance",
   "Remote",
+  "Show All Types"
 ];

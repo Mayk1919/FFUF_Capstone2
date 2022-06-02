@@ -12,13 +12,13 @@ class RouteGenerator {
 
     switch (settings.name) {
       case WelcomePage:
-        return MaterialPageRoute(builder: (_) => WelcomeScreen());
+        return MaterialPageRoute(builder: (_) => const WelcomeScreen());
       case LoginPage:
-        return MaterialPageRoute(builder: (_) => LoginScreen());
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
       case RegisterPage:
-        return MaterialPageRoute(builder: (_) => RegisterScreen());
+        return MaterialPageRoute(builder: (_) => const RegisterScreen());
       case MainPage:
-        return MaterialPageRoute(builder: (_) => MainScreen());
+        return MaterialPageRoute(builder: (_) => const MainScreen());
       case SearchPage:
       if (args is int) {
           return MaterialPageRoute(
@@ -43,9 +43,9 @@ class RouteGenerator {
     return MaterialPageRoute(builder: (_) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('error'),
+          title: const Text('error'),
         ),
-        body: Center(
+        body: const Center(
           child: Text('Error Page'),
         ),
       );

@@ -18,11 +18,11 @@ class FavoriteWidget extends StatelessWidget {
         Provider.of<JobData>(context,listen: false).updateFavorite(id);
       },
       child: isFavorite
-          ? Icon(
+          ? const Icon(
               Icons.favorite,
               color: Colors.red,
             )
-          : Icon(
+          : const Icon(
               Icons.favorite_border,
             ),
     );

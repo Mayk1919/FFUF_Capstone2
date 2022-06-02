@@ -22,7 +22,7 @@ class SearchJobView extends StatelessWidget {
             final jobSearches = snapshot.data?.mostRecentJobs ?? [];
 
             return Container(
-              padding: EdgeInsets.symmetric(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 20,
               ),
               height: MediaQuery.of(context).size.height * .6,
@@ -82,7 +82,7 @@ class SearchJobView extends StatelessWidget {
                                             .textTheme
                                             .subtitle1,
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 10,
                                       ),
                                       Expanded(
@@ -94,7 +94,7 @@ class SearchJobView extends StatelessWidget {
                                           overflow: TextOverflow.ellipsis,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 10,
                                       ),
                                     ],

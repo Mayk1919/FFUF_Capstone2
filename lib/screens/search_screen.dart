@@ -16,7 +16,7 @@ class SearchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          iconTheme: IconThemeData(
+          iconTheme: const IconThemeData(
             color: Colors.black,
           ),
           backgroundColor: Colors.transparent,
@@ -29,13 +29,13 @@ class SearchScreen extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            SearchMenuWidget(searchItem: "Search",),
+            const SearchMenuWidget(searchItem: "Search",),
             SizedBox(
               height: MediaQuery.of(context).size.height * .03,
             ),
             Container(
               width: double.infinity,
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                 //'${Provider.of<JobData>(context).getSearchScreenData()} Job Oppotunities',
                 '',
@@ -49,7 +49,7 @@ class SearchScreen extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height * .02,
             ),
-            SearchJobView(),
+            const SearchJobView(),
           ],
         ));
   }

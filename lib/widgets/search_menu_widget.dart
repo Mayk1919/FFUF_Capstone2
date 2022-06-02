@@ -9,7 +9,7 @@ class SearchMenuWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 20,
       ),
       width: double.infinity,
@@ -20,8 +20,8 @@ class SearchMenuWidget extends StatelessWidget {
           GestureDetector(
             onTap: () {
               showModalBottomSheet(
-                backgroundColor: Color(0XFFFBFBFB),
-                  shape: RoundedRectangleBorder(
+                backgroundColor: const Color(0XFFFBFBFB),
+                  shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.only(
                             topLeft: Radius.circular(40.0),
@@ -31,7 +31,7 @@ class SearchMenuWidget extends StatelessWidget {
                   isScrollControlled: true,
                   context: context,
                   builder: (BuildContext context) {
-                    return ModalButtomSheetWidget();
+                    return const ModalButtomSheetWidget();
                   });
             },
             child: Padding(
@@ -46,10 +46,10 @@ class SearchMenuWidget extends StatelessWidget {
                     height: 44,
                     width: 44,
                     decoration: BoxDecoration(
-                      color: Color(0XFF4CA6A8),
+                      color: const Color(0XFF4CA6A8),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.filter_list,
                       color: Colors.white,
                     ),

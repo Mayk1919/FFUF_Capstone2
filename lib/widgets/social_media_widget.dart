@@ -19,10 +19,10 @@ class SocialMediaWidget extends StatelessWidget {
 
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.0),
-                color: Color(0XFFE9F4FF),
+                color: const Color(0XFFE9F4FF),
               ),
 
-              child: Image(image: AssetImage('assets/images/social_logo/google.png')),
+              child: const Image(image: AssetImage('assets/images/social_logo/google.png')),
             ),
           ),
           Padding(
@@ -35,10 +35,10 @@ class SocialMediaWidget extends StatelessWidget {
 
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.0),
-                color: Color(0XFFE9F4FF),
+                color: const Color(0XFFE9F4FF),
               ),
 
-              child: Image(image: AssetImage('assets/images/social_logo/facebook.png')),
+              child: const Image(image: AssetImage('assets/images/social_logo/facebook.png')),
             ),
           )
 

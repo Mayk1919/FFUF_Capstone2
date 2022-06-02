@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SearchTextFieldWidget extends StatelessWidget {
   final String searchItem;
-  SearchTextFieldWidget({Key? key, required this.searchItem}) : super(key: key);
+  const SearchTextFieldWidget({Key? key, required this.searchItem}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +20,8 @@ class SearchTextFieldWidget extends StatelessWidget {
               enabledBorder: InputBorder.none,
               fillColor: Colors.white,
               filled: true,
-              prefixIcon: Icon(Icons.search),
-              contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+              prefixIcon: const Icon(Icons.search),
+              contentPadding: const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
               hintText: searchItem,
               helperStyle: Theme.of(context).textTheme.bodyText1,
             ),

@@ -5,7 +5,7 @@ import 'package:capstone2/widgets/widgets.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   
 
@@ -19,13 +19,13 @@ class HomeScreen extends StatelessWidget {
 
           return ListView(
             children: [
-              SearchMenuWidget(searchItem: 'Search here...'),
+              const SearchMenuWidget(searchItem: 'Search here...'),
               SizedBox(
                 height: MediaQuery.of(context).size.height * .03,
               ),
               Container(
                 width: double.infinity,
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -51,13 +51,13 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height * .02,
               ),
-              PopularJobsListView(),
+              const PopularJobsListView(),
               SizedBox(
                 height: MediaQuery.of(context).size.height * .03,
               ),
               Container(
                 width: double.infinity,
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

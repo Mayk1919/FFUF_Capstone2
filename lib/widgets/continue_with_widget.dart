@@ -10,7 +10,7 @@ class ContinueWithWidget extends StatelessWidget {
       alignment: Alignment.center,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: const [
           SizedBox(
             width: 20,
             child: Divider(
@@ -18,7 +18,7 @@ class ContinueWithWidget extends StatelessWidget {
               color: Color(0XFF9E9E9E),),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
                 horizontal: 10.0),
             child: Text('Or Continue with'),
           ),

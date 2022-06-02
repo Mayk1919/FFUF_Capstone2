@@ -31,8 +31,8 @@ class LoginScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.bodyText1,
               ),
             ),
-            EmailWidget(),
-            PasswordWidget(),
+            const EmailWidget(),
+            const PasswordWidget(),
             Container(
               width: double.infinity,
               child: Text(
@@ -53,17 +53,17 @@ class LoginScreen extends StatelessWidget {
                     '/main',
                   );
                 },
-                child: Text('LOG IN'),
+                child: const Text('LOG IN'),
               ),
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * .04,
             ),
-            ContinueWithWidget(),
+            const ContinueWithWidget(),
             SizedBox(
               height: MediaQuery.of(context).size.height * .04,
             ),
-            SocialMediaWidget(),
+            const SocialMediaWidget(),
             SizedBox(
               height: MediaQuery.of(context).size.height * .04,
             ),

@@ -284,25 +284,35 @@ class _ModalButtomSheetWidgetState extends State<ModalButtomSheetWidget> {
           ),
           Expanded(
             child: Container(
-              height: 100,
-                    width: 100,
+              height: MediaQuery.of(context).size.height * .1,
+              width: MediaQuery.of(context).size.width,
               padding: const EdgeInsets.all(5),
               child: GridView.builder(
                 itemCount: jobsTypes.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3, childAspectRatio: 0.55),
+                    crossAxisCount: 3, childAspectRatio: 2),
                 itemBuilder: (context, index) {
                   final card = jobsTypes[index];
-                  print(jobsTypes);
-                  return Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: (Container(
-                      padding: EdgeInsets.all(10),
-                      height: 10,
-                      width: 10,
-                      color: Colors.yellow,
-                      child: Text(card),
-                    )),
+                  return GestureDetector(
+                    onTap: () {
+                      print(index);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: (Container(
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white,
+                          border: Border.all(color: Color(0XFF9E9E9E)),
+                        ),
+                        alignment: Alignment.center,
+                        child: Text(
+                          card,
+                          style: Theme.of(context).textTheme.subtitle1,
+                        ),
+                      )),
+                    ),
                   );
                 },
               ),
